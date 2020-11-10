@@ -8,7 +8,388 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <%= yield %>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <a class="navbar-brand" href="#">EVENTBRITE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link" >Home 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">New event</a>
+              </li>
+            </ul>
+            <form class="btn-group-inline my-2 my-lg-0" data-children-count="1">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle my-2 my-sm-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Molécules
+                </button>
+                <div class="dropdown-menu">
+                  <a href="navbar.html" class="list-group-item list-group-item-action active">
+                    Molécule navbar
+                </a>
+                <a href="footer.html" class="list-group-item list-group-item-action">
+                    Molécule footer
+                </a>
+                <a href="authentification_form.html" class="list-group-item list-group-item-action ">
+                    Molécule Form_authentification
+                </a>
+                <a href="banner.html" class="list-group-item list-group-item-action ">
+                        Molécule Banner
+                </a>
+                <a href="card.html" class="list-group-item list-group-item-action ">
+                        Molécule card 
+                </a>
+                <a href="comments.html" class="list-group-item list-group-item-action ">
+                        Molécule comment 
+                </a>
+                <a href="eventpage.html" class="list-group-item list-group-item-action ">
+                        Molécule page event 
+                </a> 
+                </div>
+            </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle my-2 my-sm-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Log in / Inscription
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Log in</a>
+                  <a class="dropdown-item" href="#">Inscription</a>
+              </div>
+            </form>
+      </nav>
+    </header>
+    
+    <div class=" container col-10 list-group">
+
+      <h1 class="indextitle m-3"> NAVBAR </h1>
+      <a  href="navbar.html"> <button type="button" class="btn btn-success  col-2 m-3">Molécule NAVBAR</button></a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <a class="navbar-brand" href="#">EVENTBRITE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse m-3" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/events">Home 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/events/new">New event</a>
+              </li>
+            </ul>
+            <form class="btn-group-inline my-2 my-lg-0" data-children-count="1">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle my-2 my-sm-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My profile
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Profile</a>
+                </div>
+            </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle my-2 my-sm-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Log in / Inscription
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Log in</a>
+                  <a class="dropdown-item" href="#">Inscription</a>
+              </div>
+            </form>
+      </nav>
+
+      <h1 class="indextitle" > FOOTER </h1>
+      <a  href="footer.html"> <button type="button" class="btn btn-success  col-2 m-3"> Molécule footer</button></a>
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class = "row">
+          <div class = "col-12 col-md"> 
+            <img class="mb-2" src="https://verveintl.com/wp-content/uploads/2019/03/Events_white_cmyk.png" alt width="60" height="60">
+            <small class= "d-block mb-3 text-muted ml-3"> 2020 </small>
+          </div>
+        <div class="col-6 col-md">
+          <h5> À propos </h5>
+            <ul class="list-unstyled text-small"> 
+              <li>
+                <a class="text-muted" href=""> Équipe</a>
+              </li>
+              <li>
+                <a class="text-muted" href=""> Contact </a>
+              </li>
+            </ul>
+        </div>
+          <div class="col-6 col-md">
+          </div>
+          <div class="col-6 col-md">
+          <h5> Ressource </h5>
+            <ul class="list-unstyled text-small"> 
+              <li>
+            <a class="text-muted" href=""> Créer un événement </a>
+          </li>
+          <li>
+          <a class="text-muted" href=""> Voir les événements en ligne</a>
+          </li>
+          </ul>
+        </div>
+      </footer>
+      
+      <h1 class="indextitle" > BANNER </h1>
+      <a  href="banner.html"> <button type="button" class="btn btn-success  col-2 m-3">  Molécule Banner</button></a>
+
+      <h2> Bannière page d'accueil</h2>
+      <div class = "homescreen">
+        <div class="jumbotron text-center">
+          <h1 class="display-3 font-size-48--md-down">Eventbrite</h1>
+          <p class="lead font-weight-bold">Les events qui ont du chien.</p>
+          <p class=" text-center">Si t'as pas compris la blague, tu peux quitter ce site.</p> 
+          <p class ="lead text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </p>
+        </div>
+      </div>
+
+      <h2> Bannière plus petite, que l'on retrouve sur d'autres pages </h2>
+      <div class="headerpages">
+        <div class="jumbotron headerpagesbackground">
+          <h1 class="display-3 font-size-48--md-down text-white mb-4">
+            <strong class="u-text-animation u-text-animation--typing">Hello, world !</strong>
+            <span class="typed-cursor" style="animation-iteration-count: infinite;">|</span>
+            
+          </h1>
+          <p class="lead text-white">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4 text-white">
+          <p class="text-white">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+      </div>
+
+      <h1 class="indextitle" > CARDS </h1>
+        <a  href="card.html"> <button type="button" class="btn btn-success  col-2 m-3">  Molécule Card</button></a>
+        
+          <!-- Cards of Events -->  
+          <div class="card-deck mt-5">
+            <div class="card col-sm-2 col-lg-4 col-m-6">
+              <img class="card-img-top" src="https://i.pinimg.com/originals/d0/64/88/d0648801088075a37e65382913f410a1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sport Event</h5>
+                <p class="card-text">Venez apprendre l'art de faire un salto en trampoling.</p>
+                <button type="button" class="btn btn-outline-primary">S'inscrire</button>
+                <button type="button" class="btn btn-outline-secondary">En savoir plus</button>
+                <p class="card-text"><small class="text-muted">Date: 15 mars 2021</small></p>
+              </div>
+            </div>
+            <div class="card col-sm-2 col-lg-4 col-m-6">
+              <img class="card-img-top" src="https://i.pinimg.com/originals/9b/5c/ff/9b5cffb0c78c9aedc7eed04897fb271e.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Aquavent</h5>
+                <p class="card-text">Viendez nager comme des poisson</p>
+                <button type="button" class="btn btn-outline-primary">S'inscrire</button>
+                <button type="button" class="btn btn-outline-secondary">En savoir plus</button>
+                <p class="card-text"><small class="text-muted">Date: 29 janvier 2021</small></p>
+              </div>
+            </div>
+            <div class="card col-sm-2 col-lg-4 col-m-6">
+              <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F64654890%2F142507808316%2F1%2Foriginal.20190630-044814?auto=compress&s=79467749d47d230852011ec053fbbaa3" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Photo de groupe avec vos bras</h5>
+                <p class="card-text">Eh oui, la photo avec les bras levés est aussi un sport lolilol </p>
+                <button type="button" class="btn btn-outline-primary">S'inscrire</button>
+                <button type="button" class="btn btn-outline-secondary">En savoir plus</button>
+                <p class="card-text"><small class="text-muted">Date: Dès que possible</small></p>
+              </div>
+            </div>
+          </div>
+          
+        <!-- Card of Attendance -->
+    
+        <div class="card m-3 col-sm-2 col-lg-4 col-m-6">
+          <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Participants</h6>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&amp;bg=007bff&amp;fg=007bff&amp;size=1" alt="32x32" class="mr-2 rounded" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_175b25295c1%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_175b25295c1%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.296875%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 32px; height: 32px;">
+              <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <strong class="text-gray-dark">Full Name</strong>
+                </div>
+                <span class="d-block">@username</span>
+              </div>
+            </div>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="32x32" class="mr-2 rounded" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_175b25295c0%20text%20%7B%20fill%3A%236f42c1%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_175b25295c0%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%236f42c1%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.296875%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 32px; height: 32px;">
+              <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <strong class="text-gray-dark">Full Name</strong>
+                </div>
+                <span class="d-block">@username</span>
+              </div>
+            </div>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="32x32" class="mr-2 rounded" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_175b25295c5%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_175b25295c5%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.296875%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 32px; height: 32px;">
+              <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <strong class="text-gray-dark">Full Name</strong>
+                </div>
+                <span class="d-block">@username</span>
+              </div>
+            </div>
+            <small class="d-block text-right mt-3">
+              <a href="#">Voir la liste complète</a>
+            </small>
+          </div>
+        </div>
+    
+        <!-- Card of Cities -->
+        <div class="cardevents  col-sm-2 col-lg-4 col-m-6">
+          <div class="card mb-3">
+            <h3 class="card-header">Nantes</h3>
+            <img class="d-block user-select-none" src="https://metropole.nantes.fr/files/images/vie-institutions/villes/nantes-vue-aerienne-1920.jpg" width="100%" height="200" aria-label="Placeholder: SALUT" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+            </img>
+            <div class="card-body">
+              <p class="card-text">La ville de nantes reccueil pleins d'événement trop bien.</p>
+            </div>
+            <div class="card-body">
+              <button  type="button" href= "#" class="btn btn-outline-primary">Voir les événements</button>
+            </div>
+            <div class="card-footer text-muted">
+              Evenement ayant lieu le 16 Décembre 2020 (LOOOOOOL)
+            </div>
+          </div>
+        </div>
+    
+
+      <h1 class="indextitle" > COMMENTS  </h1>
+      <a  href="comments.html"> <button type="button" class="btn btn-success  col-2 m-3">Molécule comments</button>
+
+      <div class="container">
+        <ul class="post-comment block-post-comments--style-2">
+            <li class="post-comment">
+                <div class="media text-muted pt-3">
+                    <div class="block-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXlq33HvtcqAgSiJymFwZhADOU5pY6wi93_w&usqp=CAU" class="img-thumbnail" style="width: 50%; height: 50%"; >
+                    </div>
+                    <div class="block-body">
+                        <div class="block-body-inner">
+                            <h3 class="heading heading-6">
+                                <a href="#">Daniel Halliday</a>
+                            </h3>
+                            <span class="comment-date">
+                                16 avril 2019
+                            </span>
+                            <p class="comment-text">
+                                    A mon sens, la bipolarité des secteurs ne devrait pas être exposées de la sorte. Seul la race des taupes pourra nous sauver.
+                            </p>
+                            <div class="comment-options">
+                                <a href="#">Like</a>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <label for="exampleFormControlTextarea1">Vous aussi réagissez à ce commentaire...</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Saisir un commentaire ici et cliquer sur commenter"></textarea>
+        <button type="button" class="btn btn-primary mt-3">Commenter</button>
+      </div>
+
+      <h1 class="indextitle"> PAGE EVENT </h1>
+      <a  href="eventpage.html"> <button type="button" class="btn btn-success  col-2 m-3"> Molécule page event</button>
+        
+      <div class= "colorevent container col-10">
+        <div class="row mb-3">
+          <div class="col-md-8 themed-grid-col">
+            <div class="block-image">
+              <img src="https://miro.medium.com/max/3004/1*r3UzROPME99X5TRm81G2vw.jpeg" class="img-thumbnail" sizes="720px"; >
+          </div>
+          </div>
+          
+          <div class="col-6 col-md-4 mb-4 themed-grid-col">
+              <p>Information événement</p>
+              <h5 class="card-title">Aquavent</h5>
+              <p class="card-text">Viendez nager comme des poisson</p>
+              <button type="button" class="btn btn-outline-primary">S'inscrire</button>
+              <button type="button" class="btn btn-outline-secondary">En savoir plus</button>
+              <p class="card-text"><small class="text-muted">Date: 29 janvier 2021</small></p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-10 themed-grid-col">
+          
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">S'enregistrer</a>
+              </li>
+              <li class="nav-item">
+                <a  href="#"> <i class="fas fa-share-square fa-2x" ></i></a>
+              </li>
+              <li class="nav-item">
+                <a  href="#">  <i class="fab fa-gratipay fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-8 themed-grid-col">
+              <h2>Example body text</h2>
+              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p>The following is <strong>rendered as bold text</strong>.</p>
+              <p>The following is <em>rendered as italicized text</em>.</p>
+              <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p>The following is <strong>rendered as bold text</strong>.</p>
+              <p>The following is <em>rendered as italicized text</em>.</p>
+
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p>The following is <strong>rendered as bold text</strong>.</p>
+              <p>The following is <em>rendered as italicized text</em>.</p>
+          </div>
+          <div class="col-6 col-md-4 themed-grid-col">
+            <p>Information événement</p>
+            <h5 class="card-title">PS:</h5>
+            <p class="card-text">Faut venir tout nu pour nager comme un poisson</p>
+          </div>
+        </div>
+
+
+        <div class="row mb-5 pb-3">
+          <div class="col-lg-10 themed-grid-col">
+          
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a  href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+                <a  href="#"> <i class="fab fa-instagram-square fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fab fa-gratipay fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
   </body>
 </html>

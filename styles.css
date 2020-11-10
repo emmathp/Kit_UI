@@ -111,3 +111,32 @@ body {
   padding: 10%; 
   filter:grayscale(90%);
 }
+
+/* PAGE CARDS */
+
+ul{
+  list-style-type:none;
+}
+
+/* EVENT PAGE */
+
+.pageevent{
+  background-color: #d2d5d8 !important;
+}
+
+
+.colorevent{
+  background-color: rgb(255, 255, 255) !important;
+}
+
+/* INDEX PAGE */
+
+.indextitle {
+  margin-bottom: auto;
+  font-size: x-large;
+  color: red;
+}
+
+.buttonindex {
+  background-color: #4CAF50;
+}
